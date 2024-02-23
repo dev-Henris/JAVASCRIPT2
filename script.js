@@ -10,7 +10,15 @@ function buttonClick() {
 
 const numero = Math.floor(Math.random() * (e - entre + 1)) + entre; 
 
-alert ("O número sorteado é: " + (numero)); 
+
+
+if (entre>= e) { 
+
+    alert ("O primeiro valor, tem que ser MENOR que o segundo valor!!!")
+}
+
+
+if (entre<=e ) { alert ("O número sorteado é: " + (numero)); }
 
 }
 
